@@ -23,16 +23,7 @@ function createGalleryElementMarkup(galleryItems) {
     .join("");
 }
 
-// image.classList.add("gallery__image");
-
-function onImageClick(event) {
-  event.preventDefault();
-  if (event.target.nodeName !== "IMG") {
-    return;
-  }
-}
-
-const lightbox = new SimpleLightbox(".gallery__item", {
+const lightbox = new SimpleLightbox(".gallery__link", {
   captionsData: "alt",
   captionDelay: 250,
 });
